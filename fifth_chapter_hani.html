@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff1f4" />
+  <meta name="description" content="A little love letter for our fifth month together." />
+  <title>To My Baby Girl, On Our Fifth Chapter ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    :root {
+      --pink: #e98fa7;
+      --pink-dark: #c96583;
+      --rose: #f8dce4;
+      --cream: #fffaf7;
+      --ink: #59434b;
+      --muted: #987d85;
+      --white: #fff;
+      --shadow: 0 18px 55px rgba(174, 105, 127, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(255, 218, 228, .75), transparent 28rem),
+        radial-gradient(circle at 95% 30%, rgba(255, 232, 216, .65), transparent 25rem),
+        var(--cream);
+      font-family: "DM Sans", sans-serif;
+      overflow-x: hidden;
+    }
+    button { font: inherit; }
+    .serif { font-family: "Playfair Display", serif; }
+    .wrap { width: min(920px, calc(100% - 36px)); margin: auto; }
+    .section { padding: 90px 0; position: relative; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--pink-dark); background: rgba(255,255,255,.72);
+      border: 1px solid #f5d7df; border-radius: 999px;
+      padding: 8px 14px; font-size: .75rem; letter-spacing: .12em;
+      text-transform: uppercase; font-weight: 700;
+    }
+    .section-title {
+      font: 600 clamp(2rem, 6vw, 3.25rem)/1.12 "Playfair Display", serif;
+      margin: 18px 0 14px; letter-spacing: -.035em;
+    }
+    .section-copy { color: var(--muted); line-height: 1.9; max-width: 620px; margin: 0 auto; }
+    .center { text-align: center; }
+    .btn {
+      border: 0; border-radius: 999px; padding: 14px 22px;
+      background: var(--pink-dark); color: white; font-weight: 700;
+      box-shadow: 0 9px 22px rgba(201,101,131,.22);
+      cursor: pointer; transition: .25s ease; display: inline-flex;
+      align-items: center; justify-content: center; gap: 9px;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 13px 28px rgba(201,101,131,.3); }
+    .btn-soft { background: white; color: var(--pink-dark); border: 1px solid #f3d3dc; box-shadow: none; }
+
+    /* Intro */
+    .hero { min-height: 100svh; display: grid; place-items: center; padding: 70px 0 55px; }
+    .hero-card {
+      width: min(720px, 100%); text-align: center; position: relative;
+      padding: clamp(30px, 7vw, 68px) clamp(22px, 7vw, 68px);
+      border: 1px solid rgba(255,255,255,.9); border-radius: 32px;
+      background: rgba(255,255,255,.72); backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+    .hero-card:before, .hero-card:after {
+      content: "♡"; position: absolute; color: #efb5c5; font-size: 2rem;
+    }
+    .hero-card:before { top: 22px; left: 25px; transform: rotate(-18deg); }
+    .hero-card:after { right: 25px; bottom: 20px; transform: rotate(14deg); }
+    .hero-kicker { color: var(--pink-dark); font-weight: 700; letter-spacing: .16em; font-size: .75rem; text-transform: uppercase; }
+    .hero h1 { font: 600 clamp(2.7rem, 9vw, 5.5rem)/.98 "Playfair Display", serif; margin: 22px 0 18px; letter-spacing: -.055em; }
+    .hero h1 span { color: var(--pink-dark); font-style: italic; }
+    .hero p { color: var(--muted); line-height: 1.8; max-width: 480px; margin: 0 auto 28px; }
+    .date-line { margin-top: 24px; font-size: .8rem; color: #b28e99; letter-spacing: .12em; }
+    .scroll-note { margin-top: 30px; color: #b28e99; font-size: .75rem; }
+    .scroll-note i { display: block; margin-top: 8px; animation: bob 1.6s infinite; }
+    @keyframes bob { 50% { transform: translateY(5px); } }
+
+    /* Floating hearts */
+    .float-heart { position: fixed; bottom: -30px; z-index: 0; pointer-events: none; color: #efb6c6; opacity: .55; animation: floatUp linear forwards; }
+    @keyframes floatUp { to { transform: translateY(-110vh) rotate(35deg); opacity: 0; } }
+
+    /* Chapter */
+    .chapter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 38px; }
+    .memory-card {
+      background: rgba(255,255,255,.82); border: 1px solid #f6e1e6;
+      border-radius: 22px; padding: 25px; box-shadow: 0 10px 30px rgba(174,105,127,.07);
+    }
+    .memory-card .icon {
+      width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
+      background: #fff0f4; color: var(--pink-dark); font-size: 1.15rem; margin-bottom: 16px;
+    }
+    .memory-card h3 { font: 600 1.25rem "Playfair Display", serif; margin: 0 0 8px; }
+    .memory-card p { margin: 0; color: var(--muted); line-height: 1.75; font-size: .92rem; }
+
+    /* Timeline */
+    .timeline { max-width: 650px; margin: 42px auto 0; text-align: left; position: relative; }
+    .timeline:before { content: ""; position: absolute; left: 17px; top: 8px; bottom: 12px; width: 1px; background: #efcbd5; }
+    .moment { position: relative; padding: 0 0 28px 55px; }
+    .moment:last-child { padding-bottom: 0; }
+    .moment-dot { position: absolute; left: 8px; top: 2px; width: 19px; height: 19px; border-radius: 50%; background: #fff; border: 5px solid #eaa2b6; box-shadow: 0 0 0 5px #fff1f4; }
+    .moment h3 { font: 600 1.2rem "Playfair Display", serif; margin: 0 0 7px; }
+    .moment p { color: var(--muted); line-height: 1.8; margin: 0; }
+
+    /* Letter */
+    .letter-shell { max-width: 700px; margin: 38px auto 0; perspective: 1000px; }
+    .letter {
+      background: #fffdfb; border: 1px solid #f2dce2; border-radius: 8px 8px 24px 24px;
+      padding: clamp(26px, 6vw, 54px); box-shadow: var(--shadow); position: relative;
+      background-image: repeating-linear-gradient(transparent, transparent 34px, rgba(231,184,196,.17) 35px);
+    }
+    .letter:before { content: "♡"; position: absolute; top: 15px; right: 22px; color: #e8a5b7; font-size: 1.4rem; }
+    .letter p { line-height: 2; color: #78616a; margin: 0 0 18px; }
+    .letter .salutation { font: italic 1.55rem "Playfair Display", serif; color: var(--pink-dark); margin-bottom: 22px; }
+    .signature { font: italic 1.65rem "Playfair Display", serif; color: var(--pink-dark); margin-top: 28px; }
+
+    /* Promise */
+    .promise {
+      background: linear-gradient(135deg, #fce7ed, #fff4ed);
+      border: 1px solid #f5dce3; border-radius: 28px; padding: clamp(28px, 6vw, 52px);
+      max-width: 760px; margin: 38px auto 0; box-shadow: var(--shadow);
+    }
+    .promise p { font: italic clamp(1.2rem, 3vw, 1.65rem)/1.8 "Playfair Display", serif; color: #805d69; margin: 0; }
+
+    /* Final */
+    .final-card { max-width: 700px; margin: auto; padding: 50px 24px; }
+    .big-heart { font-size: 4rem; color: var(--pink); display: inline-block; animation: heartbeat 1.4s infinite; }
+    @keyframes heartbeat { 0%,100% { transform: scale(1); } 14% { transform: scale(1.13); } 28% { transform: scale(1); } 42% { transform: scale(1.1); } }
+    footer { text-align: center; padding: 25px 15px 45px; color: #b99ba4; font-size: .75rem; }
+
+    /* Music */
+    .music-toggle {
+      position: fixed; right: 18px; bottom: 18px; z-index: 5; width: 48px; height: 48px;
+      border: 1px solid #f0d4dc; border-radius: 50%; color: var(--pink-dark);
+      background: rgba(255,255,255,.9); box-shadow: 0 8px 25px rgba(174,105,127,.15);
+      cursor: pointer; font-size: 1.1rem;
+    }
+    .music-hint { position: fixed; right: 76px; bottom: 27px; z-index: 5; background: white; border: 1px solid #f3dce2; border-radius: 999px; padding: 8px 12px; font-size: .72rem; color: var(--muted); box-shadow: 0 5px 18px rgba(174,105,127,.08); }
+
+    @media (max-width: 640px) {
+      .section { padding: 70px 0; }
+      .chapter-grid { grid-template-columns: 1fr; }
+      .hero-card { border-radius: 25px; }
+      .music-hint { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *:before, *:after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <source src="terbuangdalamwaktu" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-kicker">a little something for you ♡</div>
+          <h1 class="serif">Teruntuk Pacarku,<br><span>On Our Fifth Chapter.</span></h1>
+          <p>Lima bulan, beberapa cerita, banyak tawa, dan satu orang yang masih ingin aku ganggu setiap hari.</p>
+          <button class="btn" id="openLetter"><i class="bi bi-envelope-heart"></i> Buka sesuatu, nona</button>
+          <div class="date-line">08 JUNI 2026 &nbsp;·&nbsp; 08 NOVEMBER 2026</div>
+          <div class="scroll-note">psst... masih ada sedikit cerita di bawah <i class="bi bi-chevron-double-down"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap center">
+        <span class="eyebrow"><i class="bi bi-calendar-heart"></i> chapter five</span>
+        <h2 class="section-title">Five months, a thousand little feelings.</h2>
+        <p class="section-copy">Lima bulan mungkin belum sepanjang perjalanan yang kita impikan. Tapi di dalam lima bulan ini, ada banyak hal sederhana yang diam-diam menjadi bagian favorit dari hari-hariku.</p>
+
+        <div class="chapter-grid">
+          <article class="memory-card">
+            <div class="icon"><i class="bi bi-chat-heart"></i></div>
+            <h3>Obrolan random kita</h3>
+            <p>Dari cerita yang serius sampai hal paling tidak penting. Entah bagaimana, ngobrol sama kamu sering jadi bagian yang paling aku tunggu.</p>
+          </article>
+          <article class="memory-card">
+            <div class="icon"><i class="bi bi-moon-stars"></i></div>
+            <h3>Suara sebelum tidur</h3>
+            <p>Telepon malam, sleep call, atau sekadar saling menemani. Kadang yang dibutuhkan cuma tahu bahwa kita ada di ujung telepon yang sama.</p>
+          </article>
+          <article class="memory-card">
+            <div class="icon"><i class="bi bi-emoji-smile"></i></div>
+            <h3>Tawa dan ke-tengil-an</h3>
+            <p>Terima kasih sudah bertahan menghadapi humor recehku. Aku tahu, ini salah satu ujian terberat dalam hubungan kita.</p>
+          </article>
+          <article class="memory-card">
+            <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+            <h3>Rasa peduli yang kecil</h3>
+            <p>Hal-hal sederhana darimu membuatku merasa diperhatikan. Dan percayalah, aku menyimpan hal-hal itu lebih lama dari yang kamu kira.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:rgba(255,239,243,.48)">
+      <div class="wrap center">
+        <span class="eyebrow"><i class="bi bi-stars"></i> little things i remember</span>
+        <h2 class="section-title">Some moments stay.</h2>
+        <p class="section-copy">Bukan selalu tentang peristiwa besar. Kadang justru hal-hal kecil yang membuat seseorang terasa begitu berarti.</p>
+
+        <div class="timeline">
+          <div class="moment">
+            <span class="moment-dot"></span>
+            <h3>When you took care of me</h3>
+            <p>Waktu kamu menyarankan Freshcare karena hidungku sering gatal. Sederhana, tapi aku merasa kamu memperhatikan hal-hal kecil tentangku.</p>
+          </div>
+          <div class="moment">
+            <span class="moment-dot"></span>
+            <h3>When you worried about me</h3>
+            <p>Waktu aku jatuh dari motor dan kamu terus menanyakan keadaanku. Aku baik-baik saja, tapi perhatianmu bikin aku merasa dijaga.</p>
+          </div>
+          <div class="moment">
+            <span class="moment-dot"></span>
+            <h3>A movie, mie ayam, and us</h3>
+            <p>Menonton <i>Laut Bercerita</i>, makan mi ayam, lalu pulang dengan cerita baru. Hari yang mungkin biasa saja bagi orang lain, tapi punya tempat sendiri buatku.</p>
+          </div>
+          <div class="moment">
+            <span class="moment-dot"></span>
+            <h3>The calls that feel like home</h3>
+            <p>Ketika kita menyempatkan waktu untuk saling mendengar suara. Tidak harus selalu punya topik, kadang ditemani saja sudah cukup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap center">
+        <span class="eyebrow"><i class="bi bi-envelope-paper-heart"></i> a letter for you</span>
+        <h2 class="section-title">Dear, Honey.</h2>
+        <p class="section-copy">Ada beberapa hal yang ingin kusampaikan tanpa disela candaan dulu. Iya, kali ini aku serius. Sedikit.</p>
+        <div class="letter-shell">
+          <div class="letter">
+            <p class="salutation">Hani, kesayanganku.</p>
+            <p>Terima kasih sudah menjadi bagian dari hari-hariku selama lima bulan ini. Terima kasih untuk perhatian, waktu, tawa, dan semua hal kecil yang mungkin tidak selalu kamu sadari sudah berarti buatku.</p>
+            <p>Aku tahu kita bukan dua manusia yang setiap hari selalu punya suasana hati baik. Ada hari ketika kita sama-sama lelah, ada saat ketika komunikasi tidak berjalan semulus biasanya. Tapi aku ingin kita terus belajar memahami satu sama lain.</p>
+            <p>Aku tidak membutuhkan hubungan yang selalu sempurna. Aku hanya ingin hubungan yang di dalamnya kita sama-sama mau bertumbuh, saling menjaga, dan tidak buru-buru menyerah ketika keadaan sedang tidak menyenangkan.</p>
+            <p>Kalau suatu hari aku terlalu tengil, ingatkan. Kalau kamu sedang tidak baik-baik saja, ceritakan kalau sudah siap. Kita tidak harus selalu punya jawaban untuk semuanya, tetapi semoga kita tetap mau saling mendengarkan.</p>
+            <p>Dan satu hal lagi: kalau aku sesekali menyebalkan, itu bukan bug yang bisa di-fix lewat update. Tapi tenang, aku akan terus berusaha memperbaiki versiku. Hehe.</p>
+            <p class="signature">With all my heart,<br>your favorite human ♡</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:35px">
+      <div class="wrap center">
+        <span class="eyebrow"><i class="bi bi-infinity"></i> a little promise</span>
+        <h2 class="section-title">One day at a time.</h2>
+        <div class="promise">
+          <p>Aku tidak bisa menjanjikan bahwa setiap hari akan selalu menyenangkan. Tapi aku ingin terus mengusahakan hari-hari yang baik bersamamu. Belajar menjadi lebih dewasa, lebih sabar, lebih pengertian, dan tetap menjadi orang yang bisa membuatmu tertawa dengan lelucon receh yang terkadang tidak lucu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap center final-card">
+        <div class="big-heart">♥</div>
+        <span class="eyebrow">08.11.2026</span>
+        <h2 class="section-title">Happy 5th month, Sayangkuuu!</h2>
+        <p class="section-copy">Semoga masih ada banyak tanggal 8 yang bisa kita rayakan, banyak tempat yang bisa kita kunjungi, banyak makanan yang bisa kita coba, dan banyak cerita yang nantinya bisa kita kenang sambil tertawa.</p>
+        <p class="section-copy" style="margin-top:18px">Jangan bosan-bosan sama aku, ya. Karena sepertinya aku masih punya banyak sekali cerita yang ingin kubagikan kepadamu.</p>
+        <p class="serif" style="font-size:1.5rem;color:var(--pink-dark);margin:28px 0 24px">I love you, Sayaaang. ♡</p>
+        <button class="btn" id="finalButton"><i class="bi bi-heart-fill"></i> Klik kalau kamu sayang aku</button>
+        <p style="font-size:.72rem;color:#b99ba4;margin-top:18px">P.S. tombol ini tidak menerima jawaban "nanti dulu". bercanda, sayang. 🤏</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-hint" id="musicHint">putar lagu kita ♫</div>
+  <button class="music-toggle" id="musicToggle" aria-label="Putar atau jeda musik"><i class="bi bi-music-note"></i></button>
+  <footer>made with love, a little courage, and too many thoughts about you. ♡</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    const music = document.getElementById('bgMusic');
+    const musicToggle = document.getElementById('musicToggle');
+    const musicHint = document.getElementById('musicHint');
+    let musicStarted = false;
+
+    async function toggleMusic() {
+      if (music.paused) {
+        try {
+          await music.play();
+          musicStarted = true;
+          musicToggle.innerHTML = '<i class="bi bi-pause-fill"></i>';
+          musicHint.textContent = 'lagunya sedang menemani ♡';
+        } catch (error) {
+          Swal.fire({
+            icon: 'info',
+            title: 'Satu langkah kecil dulu 🎵',
+            text: 'Tambahkan file musikmu ke folder music, lalu tekan tombol musik sekali lagi, ya.',
+            confirmButtonText: 'Siap, bos kecil',
+            confirmButtonColor: '#c96583'
+          });
+        }
+      } else {
+        music.pause();
+        musicToggle.innerHTML = '<i class="bi bi-music-note"></i>';
+        musicHint.textContent = 'putar lagu kita ♫';
+      }
+    }
+
+    musicToggle.addEventListener('click', toggleMusic);
+
+    document.getElementById('openLetter').addEventListener('click', async () => {
+      await Swal.fire({
+        title: 'Untuk Pacarku Yang Cakepnya Aduhaaaiiii ♡',
+        html: 'Sebelum lanjut, tarik napas sebentar.<br><br>Ada surat kecil dari seseorang yang katanya paling ganteng, paling sabar (ga juga sih hehe), dan paling sering bikin kamu geleng-geleng kepala.',
+        confirmButtonText: 'Ih, siapa tuh? 🤨',
+        confirmButtonColor: '#c96583',
+        background: '#fffaf7',
+        color: '#59434b',
+        allowOutsideClick: false
+      });
+      document.querySelector('.section').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('finalButton').addEventListener('click', () => {
+      Swal.fire({
+        title: 'Hehehe, ketahuan! 💗',
+        html: 'Aku juga sayang kamu, Sayangkuuu.<br><br>Terima kasih sudah hadir dan ikut menulis lima bab pertama cerita kita. Yuk, lanjutkan pelan-pelan, bersama-sama.',
+        confirmButtonText: 'Peluk jauh dulu ♡',
+        confirmButtonColor: '#c96583',
+        background: '#fffaf7',
+        color: '#59434b'
+      });
+      burstHearts();
+    });
+
+    function burstHearts() {
+      for (let i = 0; i < 18; i++) {
+        const heart = document.createElement('span');
+        heart.className = 'float-heart';
+        heart.textContent = ['♡', '♥', '✿'][Math.floor(Math.random() * 3)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = (14 + Math.random() * 22) + 'px';
+        heart.style.animationDuration = (3 + Math.random() * 3) + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 6500);
+      }
+    }
+
+    // Hearts drift gently in the background.
+    setInterval(() => {
+      const heart = document.createElement('span');
+      heart.className = 'float-heart';
+      heart.textContent = Math.random() > .5 ? '♡' : '·';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (12 + Math.random() * 14) + 'px';
+      heart.style.animationDuration = (8 + Math.random() * 6) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 15000);
+    }, 1700);
+  </script>
+</body>
+</html>
